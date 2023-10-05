@@ -9,11 +9,13 @@ public class Main {
         nissan.color = "blue";
         nissan.name = "nissan almera";
         nissan.model = "sedan";
+        nissan.drive();
 
         Car bmw = new Car();
         bmw.color = "black";
         bmw.name = "bmw x5";
         bmw.model = "crossover";
+        bmw.stop();
 
         new Car(); // Объект без ссылки( не сможем к нему обратиться)
 
