@@ -7,20 +7,20 @@ public class Main {
 
         Car nissan = new Car(); // через ссылки обращаемся к объекту и можем изменять его свойства
         nissan.color = "blue";
-        nissan.name = "nissan almera";
+//        nissan.name = "nissan almera";
         nissan.model = "sedan";
         nissan.drive();
 
         Car bmw = new Car();
         bmw.color = "black";
-        bmw.name = "bmw x5";
+//        bmw.name = "bmw x5";
         bmw.model = "crossover";
-        bmw.stop();
+        bmw.drive();
 
         new Car(); // Объект без ссылки( не сможем к нему обратиться)
 
-        System.out.println(nissan.color); // sout + Tab
-        System.out.println(bmw.color);
+//        System.out.println(nissan.color); // sout + Tab
+//        System.out.println(bmw.color);
 
 
 
