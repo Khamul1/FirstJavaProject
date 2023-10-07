@@ -1,6 +1,14 @@
 package ru.javabegin.opp;
 
 public class Car {
+    public Car() {
+    }
+
+    public Car(String name, String model, String color) {
+        this.name = name;
+        this.model = model;
+        this.color = color;
+    }
 
     private String name;
     private String model;
