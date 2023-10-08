@@ -11,13 +11,12 @@ public class Main {
         nissan.setModel("sedan");
 
 
-//        nissan.drive();
+        nissan.drive();
+        int result = nissan.sumNumbers(4555,5555);
 
-//
-//        new Car(); // Объект без ссылки( не сможем к нему обратиться)
+        System.out.println("result= "+ result);
 //
 //        System.out.println(nissan.getName()); // sout + Tab
-////        System.out.println(bmw.color);
 
 
 
