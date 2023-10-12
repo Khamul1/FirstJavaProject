@@ -7,6 +7,7 @@ public class Main {
 
         car.setName("car");
         car.drive();
-
+        car.signal();
+        car.setNumber(456);
     }
 }

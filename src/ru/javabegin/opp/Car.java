@@ -3,14 +3,16 @@ package ru.javabegin.opp;
 
 public class  Car extends Transport{
 
+    private  int number;
 
-    public int sumNumbers(int d1, int d2){
-
-        if (d1>0){
-            return d1-d2;
-        }else{
-            return d1 + d2;
+    public int getNumber() {
+        return number;
     }
 
+    public void setNumber(int number) {
+        this.number = number;
+    }
+    public  void  signal(){
+        System.out.println("signal");
     }
 }
