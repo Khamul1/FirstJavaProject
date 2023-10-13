@@ -17,12 +17,16 @@ public class  Car extends Transport{
     }
 
     @Override
-    void drive() {
-        System.out.println("car drive");
+    public void drive() {
+
+        super.drive();
+        super.stop();
+
+        System.out.println("drive car");
     }
 
     @Override
-    void stop() {
-        System.out.println("car stop");
+    public void stop() {
+        System.out.println("stop car");
     }
 }

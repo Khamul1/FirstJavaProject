@@ -19,10 +19,10 @@ public class Transport {
 
     public void setName(String name) {this.name = name;}
 
-    void drive() {
-        System.out.println(name + " drive");
+    public void drive() {
+        System.out.println(" drive transport");
     }
-    void stop() {
-            System.out.println(name + "stop");
+    public void stop() {
+            System.out.println("stop transport");
     }
 }
