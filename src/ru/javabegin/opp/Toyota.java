@@ -1,2 +1,4 @@
-package ru.javabegin.opp;public class Toyota {
+package ru.javabegin.opp;
+
+public class Toyota extends Car{
 }

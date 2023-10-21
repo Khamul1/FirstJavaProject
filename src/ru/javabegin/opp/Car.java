@@ -3,8 +3,9 @@ package ru.javabegin.opp;
 
 public class  Car extends Transport{
 
-    public Car(String name, String model, String color) {
-        super(name, model, color); // перекидываем все значение в род.конструктор
+    public Car() {
+        super("name", "model", "color"); // вызов конструктора родительского класса с пустыми значениями аргументов
+        // Перекидываем все значение в род. Конструктор
     }
 
     public Car(String name, String model, String color, int number) {
@@ -28,4 +29,18 @@ public class  Car extends Transport{
     public  void  signal(){
         System.out.println("signal");
     }
+
+//    @Override
+//    public void drive() {
+//        super.drive();
+//            //доработанный функционал для метода drive
+//        System.out.println("drive car");
+//    }
+
+    @Override
+    public void stop() {
+        super.stop();
+        System.out.println("stop car");
+    }
+
 }
