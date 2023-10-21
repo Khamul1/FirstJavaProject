@@ -2,9 +2,18 @@ package ru.javabegin.opp;
 
 public class Transport {
 
+    public  Transport() {
+    }
+    public Transport(String name, String model, String color) {
+    this.name = name;
+    this.model = model;
+    this.color = color;
+}
     private String name;
     private String model;
     private String color;
+
+
 
 
     public String getName() {return name;}
