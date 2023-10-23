@@ -1,7 +1,9 @@
-package ru.javabegin.opp;
+package ru.javabegin.opp.car;
 
 
-public class  Car extends Transport{
+import ru.javabegin.opp.Transport;
+
+public class  Car extends Transport {
 
     public Car() {
         System.out.println("car");

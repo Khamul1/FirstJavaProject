@@ -1,21 +1,29 @@
-package ru.javabegin.opp;
+package ru.javabegin.opp.motorbike;
 
-public class Motorbike extends Transport{
-    private double volume;
+import ru.javabegin.opp.Transport;
+
+public class Motorbike extends Transport {
+
     public Motorbike() {
-        this.volume(0.0);
     }
 
-    private void volume(double v) {
-    }
-    public void voidMethod(){
-        System.out.println("Motorbike voidMethod");
+    public Motorbike(String name, String model, String color, double volume) {
+        super(name, model, color);
+        this.volume = volume;
     }
 
     public Motorbike(String name, String model, String color) {
         super(name, model, color);
     }
+
+    private double volume; // объем бака
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
 }
-
-
 

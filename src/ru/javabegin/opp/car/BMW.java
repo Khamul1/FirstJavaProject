@@ -1,4 +1,4 @@
-package ru.javabegin.opp;
+package ru.javabegin.opp.car;
 
 public class BMW extends Car {
 

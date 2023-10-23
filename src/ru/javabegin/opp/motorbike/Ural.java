@@ -1,15 +1,31 @@
-package ru.javabegin.opp;
+package ru.javabegin.opp.motorbike;
 
-public class Ural extends Motorbike{
-    private boolean firstAidKit;
+public class Ural extends Motorbike {
 
-    public Ural(){
-        super();
-        this.firstAidKit = false;
+    public Ural() {
     }
 
-    public Ural(double volume, boolean firstAidKit) {
-        super(volume);
+    public Ural(String name, String model, String color, double volume, boolean firstAidKit) {
+        super(name, model, color, volume);
         this.firstAidKit = firstAidKit;
     }
+
+    private boolean firstAidKit; // есть ли аптечка
+
+    public boolean isFirstAidKit() {
+        return firstAidKit;
+    }
+
+    public void setFirstAidKit(boolean firstAidKit) {
+        this.firstAidKit = firstAidKit;
+    }
+
+    public void showInfo(){
+        System.out.println("name=" + getName());
+        System.out.println("volume="+getVolume());
+        System.out.println("aid="+isFirstAidKit());
+    }
 }
+
+
+
