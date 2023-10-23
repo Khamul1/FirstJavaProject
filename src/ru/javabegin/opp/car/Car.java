@@ -4,7 +4,13 @@ package ru.javabegin.opp;
 public class  Car extends Transport{
 
     public Car() {
+        System.out.println("car");
+        // Перекидываем все значение в род. Конструктор
+    }
+
+    public Car(String name, String model, String color) {
         super("name", "model", "color"); // вызов конструктора родительского класса с пустыми значениями аргументов
+        System.out.println("transport");
         // Перекидываем все значение в род. Конструктор
     }
 
@@ -16,7 +22,6 @@ public class  Car extends Transport{
     public Car(int number) {
         this.number = number;
     }
-
     private  int number;
 
     public int getNumber() {

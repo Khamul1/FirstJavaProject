@@ -3,6 +3,7 @@ package ru.javabegin.opp;
 public class Transport {
 
     public  Transport() {
+        System.out.println("transport");
     }
     public Transport(String name, String model, String color) {
     this.name = name;
