@@ -1,17 +1,22 @@
 package ru.javabegin.opp;
 
-import ru.javabegin.opp.motorbike.Kawasaki;
-import ru.javabegin.opp.motorbike.Ural;
+import ru.javabegin.opp.car.Car;
 
 public class Main {
     public static void main(String[] args) {
 
-        Kawasaki kawasaki = new Kawasaki("Jj","super model","orange",1999);
-        kawasaki.jump();
 
-        Ural ural = new Ural("JJ","super model","orange",2.5,true);
-        ural.showInfo();
+        Engine engine = new Engine(10);
 
+        Car car = new Car(10, engine);
+        car.drive();
+
+//        System.out.println("car.wheelCount = " + car.wheelCount);
+//
+//        Ural ural = new Ural();
+//        System.out.println("ural.wheelCount = " + ural.wheelCount);
+
+//        System.out.println("car.getEngine() = " + car.getEngine());
 
 
     }

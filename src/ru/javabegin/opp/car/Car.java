@@ -1,13 +1,12 @@
 package ru.javabegin.opp.car;
 
 
+import ru.javabegin.opp.Engine;
 import ru.javabegin.opp.Transport;
 
 public class  Car extends Transport {
 
     public Car() {
-        System.out.println("car");
-        // Перекидываем все значение в род. Конструктор
     }
 
     public Car(String name, String model, String color) {
@@ -21,10 +20,21 @@ public class  Car extends Transport {
         this.number = number;
     }
 
-    public Car(int number) {
+    public Car(int number, Engine engine) {
         this.number = number;
+        this.engine = engine;
     }
     private  int number;
+    private Engine engine;
+    public final int wheelCount = 4;
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 
     public int getNumber() {
         return number;
@@ -37,12 +47,14 @@ public class  Car extends Transport {
         System.out.println("signal");
     }
 
-//    @Override
-//    public void drive() {
-//        super.drive();
-//            //доработанный функционал для метода drive
-//        System.out.println("drive car");
-//    }
+    @Override
+    public void drive() {
+        super.drive();
+            //доработанный функционал для метода drive
+        System.out.println("drive car with wheelCount = "+wheelCount);
+
+
+    }
 
     @Override
     public void stop() {
