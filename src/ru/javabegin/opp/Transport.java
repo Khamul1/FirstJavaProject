@@ -35,4 +35,9 @@ public class Transport {
     public void stop() {
             System.out.println("stop transport");
     }
+
+    public static String formatText(String text) {
+        return text + "!!!";
+    }
 }
+
