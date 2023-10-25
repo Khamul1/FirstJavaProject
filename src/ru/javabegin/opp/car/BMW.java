@@ -7,7 +7,7 @@ public class BMW extends Car {
     }
 
     public BMW() {
-        System.out.println("bmw");
+//        System.out.println("bmw");
     }
 
     @Override

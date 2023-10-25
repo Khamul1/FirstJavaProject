@@ -3,17 +3,17 @@ package ru.javabegin.opp;
 public class Transport {
 
     public  Transport() {
-        System.out.println("transport");
+//        System.out.println("transport");
     }
     public Transport(String name, String model, String color) {
     this.name = name;
     this.model = model;
     this.color = color;
 }
-    private String name;
-    private String model;
-    private String color;
-
+    private String name; // название, которое будет у всех транспортов
+    private String model; // модель
+    private String color; // цвет
+    public static int year; // год выпуска - будет иметь 1 значение на все объекты Transport или дочерний
 
 
 
